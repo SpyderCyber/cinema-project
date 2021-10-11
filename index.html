@@ -11,50 +11,176 @@
 </head>
 
 <body>
-  <header class="header container">
-    <a class="link-logo" href="#main">
-      <img class="logo" src="img/logo.svg" alt="there was a logo here">
-    </a>
+  <header class="header">
+    <div class="navbar container">
+      <a class="link-logo" href="#main">
+        <img class="logo" src="img/logo.svg" alt="there was a logo here">
+      </a>
+  
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="#tests">
+              главная
+            </a>
+          </li>
+  
+          <li class="menu-item">
+            <a class="menu-link" href="#main">
+              фильмы
+            </a>
+          </li>
+  
+          <li class="menu-item">
+            <a class="menu-link" href="#main">
+              кинотеатры
+            </a>
+          </li>
+  
+          <li class="menu-item">
+            <a class="menu-link" href="#main">
+              события
+            </a>
+          </li>
+  
+          <li class="menu-item">
+            <a class="menu-link" href="#main">
+              поддержка
+            </a>
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="user">
+        <span class="greeting">Привет, user!</span>
+        <img class="user-avatar" src="img/avatar.jpeg" alt="someone's stupid face">
+      </div>
+    </div>
 
-    <nav class="nav">
-      <ul class="menu">
-        <li class="menu-item">
-          <a class="menu-link" href="#main">
-            главная
-          </a>
-        </li>
+    <div class="info-films container">
+      <div class="description">
+        <span class="film-subtitle">
+          avengers: infinity war
+        </span>
 
-        <li class="menu-item">
-          <a class="menu-link" href="#main">
-            фильмы
-          </a>
-        </li>
+        <h1 class="main-title">
+          Мстители: война бесконечности
+        </h1>
 
-        <li class="menu-item">
-          <a class="menu-link" href="#main">
-            кинотеатры
-          </a>
-        </li>
+        <p class="text-descripton">
+          Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.
+        </p>
 
-        <li class="menu-item">
-          <a class="menu-link" href="#main">
-            события
-          </a>
-        </li>
+        <div class="details-film">
+          <div class="clock">
+            <img class="clock-film" src="img/clock.svg" alt="clock icon">
+            <span class="time-counter">240 мин.</span>
+          </div>
+          <div class="rating">
+            <img class="rating-icon-film" src="img/imdb-rating.png" alt="imdb icon">
+            <span class="time-counter">
+              <strong class="rating-strong">9.2</strong>/10
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <a class="svg-icon" href="#test">
+        <svg class="play">
+          <use xlink:href="img/sprite.svg#button-play"></use>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="premiere-date container">
+      <div class="date">
+        <span class="header-premiere">
+          Дата
+        </span>
 
-        <li class="menu-item">
-          <a class="menu-link" href="#main">
-            поддержка
-          </a>
-        </li>
-      </ul>
-    </nav>
+        <div class="wrapper-date">  
+          <div class="date-item">
+            <span class="date-month">
+            апр
+            </span>
+            <span class="date-number">
+            27
+            </span>
+            <span class="date-day">
+            пт
+            </span>
+          </div>
 
-    <div class="user">
-      <span class="greeting">Привет, user!</span>
-      <img class="user-avatar" src="img/avatar.jpeg" alt="someone's stupid face">
+          <div class="date-item">
+            <span class="date-month">
+              апр
+            </span>
+            <span class="date-number">
+              28
+            </span>
+            <span class="date-day">
+              сб
+            </span>
+          </div>
+
+          <div class="date-item">
+            <span class="date-month">
+              апр
+            </span>
+            <span class="date-number">
+              29
+            </span>
+            <span class="date-day">
+              вс
+            </span>
+          </div>
+
+          <div class="date-item">
+            <span class="date-month">
+              апр
+            </span>
+            <span class="date-number">
+              30
+            </span>
+            <span class="date-day">
+              пн
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cinema">
+        <span class="header-premiere">
+          Кинотеатр
+        </span>
+        <div class="wrapper-cinema">
+          <select name="cinema" id="cinema">
+            <option value="Mars">Mars</option>
+            <option value="Venus">Venus</option>
+            <option value="Jupiter">Jupiter</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Earth">Earth</option>
+          </select>
+        </div>
+
+      </div>
+      <div class="time">
+        <span class="header-premiere">
+          Время
+        </span>
+        <div class="wrapper-time">
+          <select name="time" id="time">
+            <option value="12:00">12:00</option>
+            <option value="16:00">16:00</option>
+            <option value="19:00">19:00</option>
+          </select>
+        </div>
+      </div>
+
     </div>
   </header>
+
+
 </body>
 
 </html>
